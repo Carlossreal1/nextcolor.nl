@@ -49,7 +49,7 @@ export default function App() {
             { src: "/amario4.jpeg", alt: "Woning interieur" },
             { src: "/amario5.jpeg", alt: "Woning interieur" },
             { src: "/winkel_pauw12.jpeg", alt: "Buitenmuur schilderwerk" },
-            { src: "/winkel_pauw8.jpeg", alt: "Buitenmuur schilderwerk" },
+
             { src: "/winkel_pauw13.jpeg", alt: "Buitenmuur schilderwerk" },
             { src: "/trap4.jpeg", alt: "Trap renovatie" },
             { src: "/trap2.jpeg", alt: "Trap renovatie" },
