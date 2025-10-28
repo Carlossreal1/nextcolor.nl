@@ -39,50 +39,39 @@ export default function App() {
 
       {/* Gallery */}
       <section className="py-16 px-6 text-center">
-        <h3 className="text-2xl font-semibold mb-8">Galerij</h3>
+        <h3 className="text-3xl font-bold mb-10 text-white tracking-wide">
+          Galerij
+        </h3>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { src: "/src/assets/amario1.jpeg", alt: "Woning interieur" },
-            { src: "/src/assets/amario4.jpeg", alt: "Woning interieur" },
-            { src: "/src/assets/amario5.jpeg", alt: "Woning interieur" },
-            {
-              src: "/src/assets/winkel_pauw12.jpeg",
-              alt: "Buitenmuur schilderwerk",
-            },
-            {
-              src: "/src/assets/winkel_pauw8.jpeg",
-              alt: "Buitenmuur schilderwerk",
-            },
-            {
-              src: "/src/assets/winkel_pauw13.jpeg",
-              alt: "Buitenmuur schilderwerk",
-            },
-            { src: "/src/assets/trap4.jpeg", alt: "Trap renovatie" },
-            { src: "/src/assets/trap2.jpeg", alt: "Trap renovatie" },
-            { src: "/src/assets/trap3.jpeg", alt: "Trap renovatie" },
-
-            { src: "/src/assets/casa_haarlem1.jpeg", alt: "Muur schilderwerk" },
-            { src: "/src/assets/casa_haarlem2.jpeg", alt: "Muur schilderwerk" },
-            { src: "/src/assets/casa_haarlem3.jpeg", alt: "Muur schilderwerk" },
-
-            /*{ src: "/src/assets/pintura4.jpg", alt: "Plafond afwerking" },
-            {
-              src: "/src/assets/pintura5.jpg",
-              alt: "Bedrijfspand schilderwerk",
-            },
-            { src: "/src/assets/pintura6.jpg", alt: "Detail schilderwerk" },*/
+            { src: "/amario1.jpeg", alt: "Woning interieur" },
+            { src: "/amario4.jpeg", alt: "Woning interieur" },
+            { src: "/amario5.jpeg", alt: "Woning interieur" },
+            { src: "/winkel_pauw12.jpeg", alt: "Buitenmuur schilderwerk" },
+            { src: "/winkel_pauw8.jpeg", alt: "Buitenmuur schilderwerk" },
+            { src: "/winkel_pauw13.jpeg", alt: "Buitenmuur schilderwerk" },
+            { src: "/trap4.jpeg", alt: "Trap renovatie" },
+            { src: "/trap2.jpeg", alt: "Trap renovatie" },
+            { src: "/trap3.jpeg", alt: "Trap renovatie" },
+            { src: "/casa_haarlem1.jpeg", alt: "Muur schilderwerk" },
+            { src: "/casa_haarlem2.jpeg", alt: "Muur schilderwerk" },
+            { src: "/casa_haarlem3.jpeg", alt: "Muur schilderwerk" },
           ].map((item, i) => (
             <div
               key={i}
-              className="relative overflow-hidden rounded-2xl shadow-lg group"
+              className="relative overflow-hidden rounded-2xl shadow-lg group opacity-0 animate-fadeIn"
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <img
                 src={item.src}
                 alt={item.alt}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500 ease-in-out"
               />
+
+              {/* Overlay com o texto */}
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-                <p className="text-white font-medium">{item.alt}</p>
+                <p className="text-white font-medium text-lg">{item.alt}</p>
               </div>
             </div>
           ))}
