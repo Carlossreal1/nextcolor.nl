@@ -151,8 +151,34 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-auto py-4 border-t border-gray-700 text-center text-sm text-lightgray">
-        © {new Date().getFullYear()} NextColor.nl — Alle rechten voorbehouden
+      <footer className="mt-auto py-6 border-t border-gray-700 text-center text-sm text-lightgray">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div>
+            © {new Date().getFullYear()} NextColor.nl — Alle rechten
+            voorbehouden
+          </div>
+
+          {/* Instagram link */}
+          <div>
+            <a
+              href="https://www.instagram.com/denextcolor"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Instagram NextColor"
+              className="inline-flex items-center justify-center p-2 rounded-full border border-gray-700 text-lightgray hover:text-white hover:bg-[#1A2A40] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-5 h-5"
+                aria-hidden="true"
+              >
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm6.5-.8a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
