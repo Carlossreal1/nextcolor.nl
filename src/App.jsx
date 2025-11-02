@@ -17,8 +17,7 @@ export default function App() {
           Perfecte Afwerking
         </h2>
         <p className="text-lg text-lightgray mb-6">
-          Woningen • Bedrijven • Binnen • Buiten •<br /> Heemstede • Haarlem •
-          en Omgeving
+          Woningen • Binnen • Buiten
         </p>
         <p className="font-semibold">Snelle, nette en betrouwbare service</p>
       </section>
