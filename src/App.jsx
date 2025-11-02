@@ -25,6 +25,8 @@ export default function App() {
       {/* Services */}
       <section className="py-16 bg-[#101B2E] px-6 text-center">
         <h3 className="text-2xl font-semibold mb-8">Onze Diensten</h3>
+        <p className="font-semibold">Heemstede Haarlem en Omgeving</p>
+        <br />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {["Woningen", "Bedrijven", "Binnen", "Buiten"].map((item) => (
             <div
@@ -47,7 +49,6 @@ export default function App() {
           {[
             { src: "/amario1.jpeg", alt: "Woning interieur" },
             { src: "/amario4.jpeg", alt: "Woning interieur" },
-            { src: "/amario5.jpeg", alt: "Woning interieur" },
             { src: "/porta5.jpeg", alt: "Woning interieur" },
             { src: "/winkel_pauw12.jpeg", alt: "Buitenmuur schilderwerk" },
             { src: "/winkel_pauw13.jpeg", alt: "Buitenmuur schilderwerk" },
@@ -148,6 +149,27 @@ export default function App() {
             joseccrodrigues@hotmail.com
           </a>
         </p>
+        {/* Instagram link */}
+        <div>
+          <a
+            href="https://www.instagram.com/denextcolor"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram @denextcolor"
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-gray-700 text-lightgray hover:text-white hover:bg-[#1A2A40] transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-5 h-5"
+              aria-hidden="true"
+            >
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm6.5-.8a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z" />
+            </svg>
+            <span className="text-sm">Instagram /@denextcolor</span>
+          </a>
+        </div>
       </section>
 
       {/* Footer */}
@@ -156,27 +178,6 @@ export default function App() {
           <div>
             © {new Date().getFullYear()} NextColor.nl — Alle rechten
             voorbehouden
-          </div>
-
-          {/* Instagram link */}
-          <div>
-            <a
-              href="https://www.instagram.com/denextcolor"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Instagram NextColor"
-              className="inline-flex items-center justify-center p-2 rounded-full border border-gray-700 text-lightgray hover:text-white hover:bg-[#1A2A40] transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5"
-                aria-hidden="true"
-              >
-                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm6.5-.8a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z" />
-              </svg>
-            </a>
           </div>
         </div>
       </footer>
