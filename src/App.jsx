@@ -51,6 +51,8 @@ export default function App() {
             { src: "/porta5.jpeg", alt: "Woning interieur" },
             { src: "/winkel_pauw12.jpeg", alt: "Buitenmuur schilderwerk" },
             { src: "/winkel_pauw13.jpeg", alt: "Buitenmuur schilderwerk" },
+            { src: "/winkel_pauw_m1.JPG", alt: "interieur Winkel Pauw" },
+            { src: "/winkel_pauw_m2.JPG", alt: "interieur Winkel Pauw" },
 
             { src: "/trap4.jpeg", alt: "Trap renovatie" },
             { src: "/trap2.jpeg", alt: "Trap renovatie" },
